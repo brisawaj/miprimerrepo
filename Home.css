@@ -40,3 +40,15 @@ a {color: black;}
     height: 180px;
     width: 180px;
 }
+.foto-detalle-pelicula { 
+    height: 380px;
+    width: 380px;
+    display: flex;
+}
+.estrella{width: 200px;
+    display: flex;}
+
+.texto-descripcion{
+    display: flex;
+    justify-content: space-between;
+flex-direction: row;}
