@@ -114,7 +114,6 @@ a {
 
 .generos{
     font-size: 30px;
-<<<<<<< HEAD
 }
 .detalle-generos {
     display: flex;
@@ -122,14 +121,14 @@ a {
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 10px;
-=======
->>>>>>> 8fd564c8f74d423db5f74893e7660e9354d6a27e
+    flex-wrap: wrap;
 }
 
 .detalle-generos img {
     height: 180px;
     width: 180px;
 }
+
 @media (max-width: 660px) {
     .form-largo {
             width: 300px}
@@ -142,8 +141,14 @@ a {
         flex-direction: column;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     .form-largo{width: 60px;
     }
+=======
+    .form-largo {width: 100%;}
+    form{width: 100%;
+    padding-right: 20px;}
+>>>>>>> 8da7c75afbd5fd76e30e8e8e49b0ce5a66302a53
 
     h1{font-size: 20px;
     }
@@ -153,7 +158,9 @@ a {
         flex-direction: column;
         justify-content: space-between;
     }
+
     .contenedor-horizontal{justify-content: center;}
+<<<<<<< HEAD
     .form-largo {
         width: 300px;}
   
@@ -174,8 +181,22 @@ a {
 
  
 
+=======
+    
+    .separacion {
+        height: 150px;}
+}
+<<<<<<< HEAD
+=======
+h1 {
+    color: white;
+    font-size: 20px;
+}
+}
+>>>>>>> 8da7c75afbd5fd76e30e8e8e49b0ce5a66302a53
 <<<<<<< HEAD
 
 =======
 >>>>>>> 8fd564c8f74d423db5f74893e7660e9354d6a27e
 >>>>>>> 2f24ca9bc74693dd10995a48f99f5addd632aa07
+>>>>>>> 5347f9b54dd9c207d2b08ef3a085160925906ffa
