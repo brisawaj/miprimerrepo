@@ -9,6 +9,7 @@ header {
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 10px;
+    flex-wrap: wrap;
 }
 h1{
     color: white;
@@ -35,6 +36,7 @@ a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
 }
 footer {
     display: flex;
@@ -50,6 +52,7 @@ img {
 .form-largo {
     width: 600px;
     background-color: white;
+    
 }
 
 .lista-horizontal {
@@ -72,6 +75,7 @@ a {
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 10px;
+    flex-wrap: wrap;
 }
 
 .contenedor-horizontal img {
@@ -110,17 +114,50 @@ a {
 
 .generos{
     font-size: 30px;
+<<<<<<< HEAD
+}
+.detalle-generos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 10px;
+=======
+>>>>>>> 8fd564c8f74d423db5f74893e7660e9354d6a27e
 }
 
-@media (max-width:420px) {
-    body{
-        background-color: red;
-    }
+.detalle-generos img {
+    height: 180px;
+    width: 180px;
+}
+@media (max-width: 660px) {
+    .form-largo {
+            width: 300px}
+}
+
+@media (max-width:460px) {
     .texto-descripcion {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
     }
+<<<<<<< HEAD
+    .form-largo{width: 60px;}
+
+    h1{font-size: 25px;}
+
+    .detalle-generos{ 
+        padding-right: 10px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .contenedor-horizontal{justify-content: center;}
+    .form-largo {
+        width: 300px;}
+    }
+
+
+=======
  
 
     .separacion {
@@ -131,4 +168,8 @@ h1 {
     font-size: 20px;
 }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8fd564c8f74d423db5f74893e7660e9354d6a27e
+>>>>>>> 2f24ca9bc74693dd10995a48f99f5addd632aa07
