@@ -23,6 +23,7 @@ h1{
 ul{
     color: white;
     font-size: 17px;
+    padding-left: 40px;
 }
 p{
     color: white;
@@ -37,7 +38,7 @@ a{
 }
 .separacion{
     height: 500px;
-    background-image: url(imagen\ separacion.jpeg);
+    background-image: url(../Imagenes/imagen\ separacion.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -107,6 +108,7 @@ a {
     justify-content: space-between;
     flex-direction: row;
     padding-left: 10%;
+    gap: 30px;
 }
 
 .horizontal {
@@ -123,6 +125,7 @@ a {
 
 .generos{
     font-size: 30px;
+    padding left: 30px;
 }
 .detalle-generos {
     display: flex;
@@ -142,7 +145,7 @@ a {
 
 @media (max-width: 660px) {
     .form-largo {
-            width: 300px}
+            width: 80%}
 .contenedor-horizontal{ gap: 30px;}
 
 .texto-descripcion {
@@ -159,11 +162,15 @@ a {
         justify-content: space-between;
         flex-direction: column;
     }
-    .form-largo {width: 100%;}
-    form{width: 100%;
+
+    .form-largo{width: 80%;
+    }
+    
+    form{width: 80%;
     padding-right: 20px;}
 
-    h1{font-size: 25px;}
+    h1{font-size: 20px;
+    }
 
     .detalle-generos{ 
         padding-right: 10px;
@@ -172,12 +179,21 @@ a {
     }
 
     .contenedor-horizontal{justify-content: center;}
-    
+
+  
+    .separacion {
+            height: 150px;
+    }
+
+    foto-detalle-pelicula {
+        height: 280px;
+        width: 280px;}
+
     .separacion {
         height: 150px;}
     h1 {
     color: white;
-    font-size: 20px;
-}
-}
+    font-size: 20px;}
+    }
+
 
