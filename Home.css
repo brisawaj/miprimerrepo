@@ -103,3 +103,15 @@ a {
 .generos{
     font-size: 30px;
 }
+
+@media (max-width:420px) {
+    body{
+        background-color: red;
+    }
+    .texto-descripcion {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+ 
+}
