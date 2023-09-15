@@ -110,7 +110,6 @@ a {
 
 .generos{
     font-size: 30px;
-<<<<<<< HEAD
 }
 
 @media (max-width:420px) {
@@ -123,21 +122,9 @@ a {
         flex-direction: column;
     }
  
+
+    .separacion {
+        height: 150px;
 }
-=======
-    
 }
-
-
-
-
-
->>>>>>> 43267ecc3da32fc49ec76ae5fc4f27fe8790aff9
-.separacion {
-    height: 500px;
-    width: 1000px;
-    background-image: url(imagen\ separacion.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
