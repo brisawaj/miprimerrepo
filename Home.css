@@ -114,6 +114,7 @@ a {
 
 .generos{
     font-size: 30px;
+<<<<<<< HEAD
 }
 .detalle-generos {
     display: flex;
@@ -121,6 +122,8 @@ a {
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 10px;
+=======
+>>>>>>> 8fd564c8f74d423db5f74893e7660e9354d6a27e
 }
 
 .detalle-generos img {
@@ -138,6 +141,7 @@ a {
         justify-content: space-between;
         flex-direction: column;
     }
+<<<<<<< HEAD
     .form-largo{width: 60px;}
 
     h1{font-size: 25px;}
@@ -153,3 +157,12 @@ a {
     }
 
 
+=======
+ 
+
+    .separacion {
+        height: 150px;
+}
+}
+}
+>>>>>>> 8fd564c8f74d423db5f74893e7660e9354d6a27e
