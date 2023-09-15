@@ -110,6 +110,21 @@ a {
 
 .generos{
     font-size: 30px;
+<<<<<<< HEAD
+}
+
+@media (max-width:420px) {
+    body{
+        background-color: red;
+    }
+    .texto-descripcion {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+ 
+}
+=======
     
 }
 
@@ -117,3 +132,4 @@ a {
 
 
 
+>>>>>>> 43267ecc3da32fc49ec76ae5fc4f27fe8790aff9
