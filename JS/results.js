@@ -12,6 +12,7 @@ fetch(`https://api.themoviedb.org/3/search/multi?query=${loQueBuscaElUsuario}&ap
 })
 .then(function(data){
     console.log(data)
+<<<<<<< HEAD
     for(let i = 0; i<data.results.length; i++){
         let nombre
         if(data.results[i].title !== undefined){
@@ -44,3 +45,6 @@ fetch(`https://api.themoviedb.org/3/search/multi?query=${loQueBuscaElUsuario}&ap
 })
 
 
+=======
+})
+>>>>>>> 1f880b2bdbfd0d30fae3eb03e004e40c27fbbde6
