@@ -115,6 +115,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .button-fav {
@@ -125,7 +126,7 @@ a {
 
 .generos{
     font-size: 30px;
-    padding left: 30px;
+    padding-left: 30px;
 }
 .detalle-generos {
     display: flex;
