@@ -1,10 +1,10 @@
 let apiKey= "23c924167ba9fad5641414b7c24eb599"
 let buscador = location.search;
 let queryString = new URLSearchParams (buscador);
-let id1 = queryString.get('id');
+let id = queryString.get('id');
 let detallePeliculas = document.querySelector('.detallePeliculas')
 
-fetch(`https://api.themoviedb.org/3/movie/?query=${id1}&api_key=${apiKey}`)
+fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
 .then(function(response){
     return response.json()
 })
