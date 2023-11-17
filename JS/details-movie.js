@@ -12,7 +12,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
     console.log(data)
     let generos=""
     for (let i=0; i < data.genres.length ; i++){
-        generos += `<a href="details-generos.html?id=${data.genres[i].id}" style="color:white;">${data.genres[i].name}, </a>`
+        generos += `<a href="details-generos.html?id=${data.genres[i].id}&name=${data.genres[i].name}" style="color:white;">${data.genres[i].name}, </a>`
     }
         
     detallePeliculas.innerHTML += `
@@ -26,7 +26,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
                     <li style="color:white;"> Sinopsis:${data.overview}</li>
                     <li style="color:white;"> Calificacion:${data.vote_average}</li>
                     <li style="color:white;"> Duracion:${data.runtime}</li>
-                    <li style="color:white;"> Genero: ${generos}</li>
+                    <li style="color:white;"> Generos:${generos}</li>
                 </ul>
                 </p>
                 <a href="favoritos.html" class="button-fav">❤️</a>
@@ -40,18 +40,22 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
     console.log
 })
 
+let boton = document.querySelector('.botonReco')
+
+boton.addEventListener('click', function(){
 fetch(`https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=${apiKey}`)
 .then(function(response){
     return response.json()
 })
 .then(function(data){
     console.log(data)
+    let recomendacionesContainer= document.querySelector ('.recomendaciones')
     for(let i=0; i<5; i++)
-    detallePeliculas.innerHTML += `
+    recomendacionesContainer.innerHTML += `
         <div class="foto-detalle-pelicula"> 
             <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" />
             <div>
-                <h1 class="color-blanco">${data.title}</h1>
+                <h1 class="color-blanco">${data.results[i].title}</h1>
                 <p>
                 <ul>
                     <li class="color-blanco"> Fecha de estreno:${data.results[i].release_date}</li>
@@ -71,3 +75,6 @@ fetch(`https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=${apiKey
     return error
     console.log
 })
+})
+
+

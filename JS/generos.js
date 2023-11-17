@@ -8,7 +8,7 @@ fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}`)
     console.log(data)
     for (let i=0; i < data.genres.length ; i++){
         generosPeliculas.innerHTML += `
-        <li><a href="details-generos.html" style="color:white";>${data.genres[i].name}</a></li>
+        <li><a href="details-generos.html?id=${data.genres[i].id}&name=${data.genres[i].name}" style="color:white";>${data.genres[i].name}</a></li>
         `
     }
     contador = contador + 1
@@ -27,7 +27,7 @@ fetch(`https://api.themoviedb.org/3/genre/tv/list?api_key=${apiKey}`)
     console.log(data)
     for (let i=0; i < data.genres.length ; i++){
         generosSeries.innerHTML += `
-        <li><a href="details-generos.html?id=w500${data.genres[i].id}" style="color:white";>${data.genres[i].name}</a></li>
+        <li><a href="details-generos.html?id=${data.genres[i].id}&name=${data.genres[i].name}" style="color:white";>${data.genres[i].name}</a></li>
         `
     }
     contador = contador + 1
