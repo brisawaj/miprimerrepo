@@ -12,9 +12,9 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
             <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" />
             <div class="horizontal">
                 <nav>
-                    <a href="details-movie.html?id=${data.results[i].id}" style="color:white;">${data.results[i].original_title}</a>
+                    <a href="details-movie.html?id=${data.results[i].id}" =class="color-blanco">${data.results[i].original_title}</a>
                 </nav>
-                <h2 style="color:white;">${data.results[i].release_date}</h2>
+                <h2 class="color-blanco">${data.results[i].release_date}</h2>
                 <a href="favoritos.html" class="button-fav">❤️</a>
             </div>
         </div>
@@ -39,9 +39,9 @@ fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`)
             <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" />
             <div class="horizontal">
                 <nav>
-                    <a href="details-movie.html?id=${data.results[i].id}" style="color:white;">${data.results[i].original_title}</a>
+                    <a href="details-movie.html?id=${data.results[i].id}class="color-blanco">${data.results[i].original_title}</a>
                 </nav>
-                <h2 style="color:white;">${data.results[i].release_date}</h2>
+                <h2 class="color-blanco">${data.results[i].release_date}</h2>
                 <a href="favoritos.html" class="button-fav">❤️</a>
             </div>
         </div>
@@ -67,9 +67,9 @@ fetch(`https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}`)
             <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" />
             <div class="horizontal">
                 <nav>
-                    <a href="details-series.html?id=${data.results[i].id}" style="color:white;">${data.results[i].name}</a>
+                    <a href="details-series.html?id=${data.results[i].id}class="color-blanco">${data.results[i].name}</a>
                 </nav>
-                <h2 style="color:white;">${data.results[i].first_air_date}</h2>
+                <h2 class="color-blanco">${data.results[i].first_air_date}</h2>
                 <a href="favoritos.html" class="button-fav">❤️</a>
             </div>
         </div>

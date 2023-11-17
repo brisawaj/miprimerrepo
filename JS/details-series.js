@@ -18,7 +18,7 @@ fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=${apiKey}`)
         <div class="foto-detalle-pelicula"> 
             <img src="https://image.tmdb.org/t/p/w500${data.poster_path}" />
             <div>
-                <h1 style="color:white;">${data.original_name}</h1>
+                <h1 class="color-blanco">${data.original_name}</h1>
                 <p>
                 <ul>
                     <li style="color:white;"> Fecha de estreno:${data.release_date}</li>
