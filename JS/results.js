@@ -14,10 +14,10 @@ fetch(`https://api.themoviedb.org/3/search/multi?query=${loQueBuscaElUsuario}&ap
     console.log(data)
     if (data.results.length == 0) {
         
-        contenedor.innerHTML += ` <h2 style="color:white;">No hay resultados para: ${loQueBuscaElUsuario}</h2> `
+        contenedor.innerHTML += ` <h2 class="color-blanco">No hay resultados para: ${loQueBuscaElUsuario}</h2> `
     }
     else {
-        contenedor.innerHTML += ` <h2 style="color:white;">Los resultados para: ${loQueBuscaElUsuario}</h2> `
+        contenedor.innerHTML += ` <h2 class="color-blanco">Los resultados para: ${loQueBuscaElUsuario}</h2> `
         for(let i = 0; i<data.results.length; i++){
             let nombre
             if(data.results[i].title !== undefined){
@@ -40,7 +40,7 @@ fetch(`https://api.themoviedb.org/3/search/multi?query=${loQueBuscaElUsuario}&ap
                     src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}"
                     alt="Descripción de la imagen"> </img>
                 <nav>
-                    <a href="details-${tipoDeLink}.html?id=${data.results[i].id}"style="color:white;">${nombre}</a>
+                    <a href="details-${tipoDeLink}.html?id=${data.results[i].id}class="color-blanco">${nombre}</a>
                 </nav>
             </div>
             `
