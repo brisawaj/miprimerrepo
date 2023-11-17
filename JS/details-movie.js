@@ -10,6 +10,11 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
 })
 .then(function(data){
     console.log(data)
+    let generos=""
+    for (let i=0; i < data.genres.length ; i++){
+        generos += `<a href="details-generos.html?id=${data.genres[i].id}" style="color:white;">${data.genres[i].name}, </a>`
+    }
+        
     detallePeliculas.innerHTML += `
         <div class="foto-detalle-pelicula"> 
             <img src="https://image.tmdb.org/t/p/w500${data.poster_path}" />
@@ -21,7 +26,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
                     <li style="color:white;"> Sinopsis:${data.overview}</li>
                     <li style="color:white;"> Calificacion:${data.vote_average}</li>
                     <li style="color:white;"> Duracion:${data.runtime}</li>
-                    <li style="color:white;"> Genero: <a href="details-movie.html"</a>${data.genres}</li>
+                    <li style="color:white;"> Genero: ${generos}</li>
                 </ul>
                 </p>
                 <a href="favoritos.html" class="button-fav">❤️</a>
